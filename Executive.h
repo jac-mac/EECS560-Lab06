@@ -6,13 +6,16 @@
 #include <limits>
 #include <fstream>
 
+#include "BinarySearchTree.h"
+
 using namespace std;
 
 class Executive
 {
   private:
   string fileName;
-  //BinarySearchTree<T> bst;
+  BST* bst;
+  TreeNode* rootPtr;
 
   public:
   Executive(string file);
